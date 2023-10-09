@@ -21,7 +21,8 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "setup.py",
-    "notebooks/trial.ipynb"
+    "notebooks/trial.ipynb",
+    "main.py"
 ]
 
 for filepath in list_of_files:
