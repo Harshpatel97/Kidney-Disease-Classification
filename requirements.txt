@@ -1,0 +1,18 @@
+ensure
+pandas
+numpy 
+PyYAML
+matplotlib
+Seaborn
+tqdm
+joblib
+gdown
+Flask-cors
+python-box
+scikit-learn
+Flask
+torch
+torchvision
+
+
+-e .
