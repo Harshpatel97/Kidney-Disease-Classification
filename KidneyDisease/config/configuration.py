@@ -1,6 +1,6 @@
 from KidneyDisease.constants import *
 from KidneyDisease.utils.common import read_yaml, create_directories
-from KidneyDisease.entity import DataIngestionConfig
+from KidneyDisease.entity import DataIngestionConfig, ModelTrainerConfig
 
 class ConfigurationManager:
     def __init__(
@@ -28,3 +28,14 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+    def get_model_trainer_config(self)-> ModelTrainerConfig:
+        config = self.config.model_trainer
+        
+        create_directories([config.model])
+        
+        model_trainer_config = ModelTrainerConfig(
+            data=config.data,
+            model=config.model
+        )
+        return model_trainer_config
