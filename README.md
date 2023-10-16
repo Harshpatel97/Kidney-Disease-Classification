@@ -1,5 +1,10 @@
 # Kidney-Disease-Classification-with-DVC
 
+
+## Dataset
+Dataset contains 12,446 unique data within it in which the cyst contains 3,709, normal 5,077, stone 1,377, and tumor 2,283
+https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone
+
 # How to run?
 ### STEPS:
 
