@@ -1,5 +1,7 @@
 # Kidney-Disease-Classification-with-DVC
 
+## Overview
+This repository hosts a machine learning project designed to predict the health status of kidneys based on medical images. The primary objective is to develop a robust model capable of accurately distinguishing between healthy and unhealthy kidneys. By harnessing the power of advanced image classification techniques, the project aims to contribute to early detection and diagnosis of kidney-related conditions.
 
 ## Dataset
 Dataset contains 12,446 unique data within it in which the cyst contains 3,709, normal 5,077, stone 1,377, and tumor 2,283
