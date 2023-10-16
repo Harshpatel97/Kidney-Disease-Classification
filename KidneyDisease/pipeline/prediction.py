@@ -31,6 +31,6 @@ class PredictionPipeline:
         
         # Create a prediction label and prediction probability dictionary for each prediction class.
         pred_labels_and_probs = {class_names[i]: float(pred_probs[0][i]) for i in range(len(class_names))}
-        Predictions = dict(sorted(pred_labels_and_probs.items(), key=lambda item: item[1], reverse=True)[:3])
+        Predictions = dict(sorted(pred_labels_and_probs.items(), key=lambda item: item[1], reverse=True))
         return [{'image': Predictions}]
         
