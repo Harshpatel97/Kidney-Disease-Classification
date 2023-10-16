@@ -95,3 +95,4 @@ class ModelTrainer:
         
         torch.save(effnetb2, 'artifacts/models/model.pth')
     
+    

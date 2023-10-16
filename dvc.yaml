@@ -1,0 +1,16 @@
+stages: 
+  data_ingestion:
+    cmd: python KidneyDisease\pipeline\stage_01_data_ingestion.py
+    deps: 
+      - KidneyDisease\pipeline\stage_01_data_ingestion.py
+      - config/config.yaml
+    outs:
+      - artifacts\data_ingestion\Data
+
+  model_trainer:
+    cmd: python KidneyDisease\pipeline\stage_02_model_trainer.py
+    deps:
+      - KidneyDisease\pipeline\stage_02_model_trainer.py
+      - config/config.yaml
+    outs:
+      - artifacts\models
