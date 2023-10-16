@@ -1,0 +1,36 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python KidneyDisease\pipeline\stage_01_data_ingestion.py
+    deps:
+    - path: KidneyDisease\pipeline\stage_01_data_ingestion.py
+      hash: md5
+      md5: 080e4f7bdc05c1d69e7d067019c26775
+      size: 923
+    - path: config/config.yaml
+      hash: md5
+      md5: d05c2bdbe2f519bc289e9f58c4dbf088
+      size: 362
+    outs:
+    - path: artifacts\data_ingestion\Data
+      hash: md5
+      md5: 480f02db6967e2017d804fca0430c1a4.dir
+      size: 1661580918
+      nfiles: 12446
+  model_trainer:
+    cmd: python KidneyDisease\pipeline\stage_02_model_trainer.py
+    deps:
+    - path: KidneyDisease\pipeline\stage_02_model_trainer.py
+      hash: md5
+      md5: 227c66dc760e7db36b04cabd2d4f7d02
+      size: 836
+    - path: config/config.yaml
+      hash: md5
+      md5: d05c2bdbe2f519bc289e9f58c4dbf088
+      size: 362
+    outs:
+    - path: artifacts\models
+      hash: md5
+      md5: 7f69c1308cf80d018eabdcbd395dfac4.dir
+      size: 31329146
+      nfiles: 1
