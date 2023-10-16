@@ -16,7 +16,7 @@ class PredictionPipeline:
         
     def predict(self):
         # Load model
-        model = torch.load("models\model.pth",
+        model = torch.load("model\model.pth",
                            map_location=torch.device('cpu')).to('cpu')
 
         image = Image.open(self.filename)
